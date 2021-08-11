@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/tools"
+    bind:context=".ui.activity.MainActivity">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.qljm.mvvmdemo.viewmodel.view.MainViewModel" />
+    </data>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.qljm.mvvmdemo.ui.fragment.LoginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</layout>
