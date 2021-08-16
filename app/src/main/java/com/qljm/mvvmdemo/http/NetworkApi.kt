@@ -1,4 +1,4 @@
-package com.qljm.mvvmdemo.api
+package com.qljm.mvvmdemo.http
 
 import android.os.Build
 import com.blankj.utilcode.util.LogUtils
@@ -6,6 +6,7 @@ import com.blankj.utilcode.util.ObjectUtils
 import com.google.gson.GsonBuilder
 import com.lihui.base.util.AppUtil
 import com.lihui.base.util.AppUuidUtil
+import com.qljm.mvvmdemo.api.ApiService
 import com.qljm.mvvmdemo.app.BaseApplication
 import com.qljm.mvvmdemo.common.BaseConstant
 import com.qljm.mvvmdemo.utils.AppPrefsUtils
@@ -28,7 +29,8 @@ import kotlin.collections.LinkedHashMap
 
 //双重校验锁式-单例 封装NetApiService 方便直接快速调用简单的接口
 val apiService: ApiService by lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED) {
-    NetworkApi.INSTANCE.getApi(ApiService::class.java, BaseConstant.BASE_URL)
+    NetworkApi.INSTANCE.getApi(
+        ApiService::class.java, BaseConstant.BASE_URL)
 }
 
 class NetworkApi : BaseNetworkApi() {

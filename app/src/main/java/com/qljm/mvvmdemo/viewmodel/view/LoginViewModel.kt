@@ -13,6 +13,7 @@ class LoginViewModel : BaseViewModel() {
     var password = StringObservableField()
     var textSize = IntObservableField()
 
+
     var clearVisible = object : ObservableInt(username) {
         override fun get(): Int {
             return if (username.get().isEmpty()) {

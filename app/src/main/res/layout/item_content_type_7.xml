@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/color_222222"
+                android:textSize="22sp"
+                tools:text="专注200万元投获思源投万达广州大健康项目退地 知情人士回应：或与资金和战略无关" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp">
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/ivContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="9dp"
+                    android:scaleType="center"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="1dp"
+                    app:riv_corner_radius="4dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_live_play"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_marginTop="@dimen/dp6"
+                        android:layout_marginRight="@dimen/dp7"
+                        android:layout_marginBottom="@dimen/dp6"
+                        android:drawableLeft="@drawable/icon_live_xiao"
+                        android:text="直播中"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_12"
+                        tools:text="直播中" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_playback_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_play"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:background="@drawable/icon_click_play" />
+
+                    <TextView
+                        android:id="@+id/tvIslive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_12"
+                        tools:text="12:23" />
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/tvFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:textColor="#ff999999"
+                android:textSize="12sp"
+                tools:text="潮科技机构" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/BaseLineView"
+            android:layout_marginTop="@dimen/dp15" />
+    </LinearLayout>
+</LinearLayout>

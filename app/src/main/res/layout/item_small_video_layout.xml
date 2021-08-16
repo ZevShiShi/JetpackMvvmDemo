@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:paddingStart="17dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="17dp"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_live_image"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_image"
+                android:layout_width="110dp"
+                android:layout_height="75dp"
+                android:background="@color/color_F2F4F7"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="3dp"
+                tools:src="@drawable/ic_user_my_shopping" />
+
+            <TextView
+                android:id="@+id/tvIslive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_small_fillet_black_transparent_bg"
+                android:gravity="center"
+                android:textColor="@color/color_ffffff"
+                android:textSize="11sp"
+                android:visibility="visible"
+                tools:text="时间戳" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_live_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@id/rl_live_image"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="标题"
+            android:textColor="@color/color_222222"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/tvscMediaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toLeftOf="@id/rl_live_image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="媒体"
+            android:textColor="@color/color_999999"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lines"
+        style="@style/LineF6F6F6"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp" />
+</LinearLayout>

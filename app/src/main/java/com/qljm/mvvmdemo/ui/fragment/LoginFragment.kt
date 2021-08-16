@@ -25,9 +25,7 @@ class LoginFragment : BaseFragment<LoginViewModel, FragmentLoginBinding>() {
         addLoadingObserve(requestViewModel)
         mDatabind.viewModel = mViewModel
         mDatabind.click = ProxyClick()
-
         mViewModel.textSize.set(ConvertUtils.sp2px(24f))
-
     }
 
 
